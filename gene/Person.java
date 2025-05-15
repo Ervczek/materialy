@@ -21,7 +21,7 @@ public class Person implements Comparable<Person>, Serializable{
         this.children = new HashSet<>();
     }
 
-    //lab6-start-------------------------------------------------------
+    
 
     public static Person fromCsvLine(String line) {
         String[] fields = line.split(",");
@@ -124,7 +124,7 @@ public class Person implements Comparable<Person>, Serializable{
         }
     }
 
-    //lab6-end-----------------------------------------------------------
+    
 
     public boolean adopt(Person child) {
         return children.add(child);
@@ -167,7 +167,7 @@ public class Person implements Comparable<Person>, Serializable{
         return sortedChildren;
     }
 
-    /*------------------lab 7------------------------------------------------------*/
+    
     public String toPlantUMLTree() {
         String result = "@startuml\n%s\n%s\n@enduml";
         Function<String, String> objectLine = str -> String.format("object \"%s\" as %s\n",str, str.replaceAll(" ", ""));
@@ -255,7 +255,7 @@ public class Person implements Comparable<Person>, Serializable{
                 .orElse(null);
     }
 
-    //Zad 8
+
     public static String toPlantUMLTreeV2(List<Person> people, Function<String, String> postProcess) {
         String result = "@startuml\n%s\n%s\n@enduml";
         Function<String, String> objectLine = str -> String.format("object \"%s\" as %s", str, str.replaceAll(" ", ""));
@@ -293,7 +293,7 @@ public class Person implements Comparable<Person>, Serializable{
     }
 
 
-    //Zad 8 i 9
+   
     public static String toPlantUMLTreeV3(List<Person> people, Predicate<Person> condition, Function<String, String> postProcess) {
         String result = "@startuml\n%s\n%s\n@enduml";
         Function<String, String> objectLine = str -> String.format("object \"%s\" as %s", str, str.replaceAll(" ", ""));
@@ -323,7 +323,7 @@ public class Person implements Comparable<Person>, Serializable{
         return String.format(result, objectString, relationString);
     }
 
-    //Zad 3 bez Consumer
+    // bez Consumer
     //    public static String toPlantUMLTree(List<Person> people) {
 //        String result = "@startuml\n%s\n%s\n@enduml";
 //        Function<String, String> objectLine = str -> String.format("object \"%s\" as %s\n", str, str.replaceAll(" ", ""));
