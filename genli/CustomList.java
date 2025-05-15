@@ -90,7 +90,7 @@ public class CustomList<T> extends AbstractList<T> {
         }
     }
 
-    //Zad 2
+   
 
     @Override
     public boolean add(T t) {
@@ -125,7 +125,7 @@ public class CustomList<T> extends AbstractList<T> {
         return node.value;
     }
 
-    //Zad 3
+   
 
     @Override
     public Iterator<T> iterator() {
@@ -154,7 +154,7 @@ public class CustomList<T> extends AbstractList<T> {
         return builder.build();
     }
 
-    //Zad 4
+  
     public static <T> CustomList<T> filterByClass(CustomList<T> list, Class<?> clazz) {
         CustomList<T> filteredList = new CustomList<>();
         for (T item : list) {
@@ -177,7 +177,7 @@ public class CustomList<T> extends AbstractList<T> {
         return filteredList;
     }
 
-    //Zad 5
+   
 
     public static <T> Predicate<T> isInOpenRange(T lowerBound, T upperBound) {
         // Metodę compareTo mżemy wywołać na rzecz obiektu typu Comparable<T>. Należy więc value, które jest
@@ -197,7 +197,7 @@ public class CustomList<T> extends AbstractList<T> {
         return count;
     }
 
-    //Zad 6
+    
     public static <T> Comparator<CustomList<T>> compareBySize() {
         return Comparator.comparingInt(customList -> customList.size());
     }
