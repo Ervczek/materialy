@@ -4,7 +4,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        //Zadanie 1
+      
 //        DeathCauseStatistic statistic=DeathCauseStatistic.fromCsvLine("A02.1          ,5,-,-,-,-,-,-,-,-,-,-,-,-,1,2,-,1,1,-,-,-");
 //        System.out.println(statistic.getKey());
 ////        int[] arr=statistic.getAgeBracket();
@@ -14,7 +14,7 @@ public class Main {
 //
 //        System.out.println(statistic.getDeaths(60));
 
-        //Zadanie 3a
+        
         DeathCauseStatisticsList statisticsList=new DeathCauseStatisticsList();
         statisticsList.repopulate("zgony.csv");
 //        System.out.println(statisticsList.get(5).getKey());
@@ -26,7 +26,7 @@ public class Main {
 //            System.out.println(diseases.getKey());
 
 
-        //Zadanie 4
+        
         //DeathCauseStatisticsList deaths = new DeathCauseStatisticsList();
         //deaths.repopulate("zgony.csv");
 
