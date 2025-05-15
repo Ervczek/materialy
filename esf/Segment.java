@@ -37,7 +37,7 @@ public class Segment {
         return "Segment: ["+ start.toString()+ ", "+ end.toString()+"]";
     }
 
-    //metoda potrzebna do zad 2 z lab 3 wyznaczająca odcinek prostopadły do segment, przechodzący przez punkt point, o długoci odcinka segment
+    //metoda wyznaczająca odcinek prostopadły do segment, przechodzący przez punkt point, o długoci odcinka segment
 
     public static Segment[] perpendicular(Segment segment, Point point) {
         // Obliczanie współczynników nachylenia segmentu
